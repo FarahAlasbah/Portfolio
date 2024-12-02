@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: #fffaf3;
+    width: 100%;
+}
+.sidebar{
+    background-color: #2A3663;
+    /* padding: 100px; */
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar img{
+    width: 150px;
+    border-radius: 50%;
+}
+.sidebar ul{
+    list-style: none;
+    padding-top: 20px;
+}
+.sidebar ul li{
+    padding: 30px 0;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+.sidebar ul li a:hover{
+    color: white;
+}
+.sidebar ul li a img:hover{
+    box-shadow: 0 0 10px white;
+}
+.maincontent{
+    margin-left: 500px;
+    overflow-y: scroll;
+}
+.maincontent > div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about h1{
+    color: #1c243f;
+    font-size: 55px;
+    width: 50%;
+}
+#about .contact{
+    color: #71788e;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#about p{
+    color: #3c4d85;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 80%;
+}
+#experience h3{
+    color: #2A3663;
+    font-size: 43px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+.Listing{
+    color: #3c4d85;
+    font-size: 27px;
+    margin-top: 30px;
+    width: 80%;
+    font-weight: bold;
+}
+.date{
+    color: #a08f77;
+    font-weight: bold;
+    float: right;
+    
+}
+.desc{
+    color: #3c4d85;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 80%;
+    padding-left: 20px;
+}
+#education h3{
+    color: #2A3663;
+    font-size: 43px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+#education .Listing .date{
+    padding-left: 20px;
+}
+.GPA{
+    color: #3c4d85;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 20px;
+}
+#skills h3{
+    color: #253057;
+    font-size: 45px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+#skills ul li{
+    color: #3c4d85;
+    font-size: 20px;
+    margin-top: 25px;
+    width: 80%;
+    padding-left: 20px;
+}
+#interests h3{
+    color: #2A3663;
+    font-size: 45px;
+    margin-bottom: 30px;
+    width: 50%;
+
+}
+#awards h3{
+    color: #2A3663;
+    font-size: 45px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+#awards ul li{
+    padding-left: 20px;
+    color: #3c4d85;
+    font-size: 20px;
+    padding-bottom: 10px;
+} 
+#awards ul li i{
+    color: #FCC201;
+}
+#contact {
+    padding: 20px;
+}
+
+#contact h3 {
+    color: #2A3663;
+    font-size: 43px;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#contact form label {
+    margin-bottom: 10px;
+    color: #3c4d85;
+    font-size: 20px;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact form textarea {
+    resize: none;
+    height: 100px;
+}
+#contact form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #2A3663;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #1c243f;
+}
+
+@media (max-width: 460px) {
+    .container {
+        height: 100vh;
+    }
+
+    .sidebar {
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+    }
+    .sidebar img,
+    .sidebar ul li a span {
+        display: none;
+    }
+    .sidebar ul li a i {
+        margin-right: 0;
+    }
+    .maincontent {
+        margin-left: 40%;
+        width: 60%;
+    }
+    .maincontent #about h1{
+        font-size: 40px;
+    }
+    .maincontent #experience h3{
+        font-size: 30px;
+    }
+    .maincontent #education h3{
+        font-size: 30px;
+    }
+    .maincontent #skills h3{
+        font-size: 30px;
+    }
+    .maincontent #interests h3{
+        font-size: 30px;
+    }
+    .maincontent #awards h3{
+        font-size: 25px;
+    }
+    .Listing{
+        font-size: 20px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    #awards ul li{
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .desc{
+        padding-left: 0;
+    }
+    #skills ul li{
+        font-size: 15px;
+    }
+    #contact form {
+        width: 100%;
+    }
+    
+}
