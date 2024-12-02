@@ -16,7 +16,7 @@
     width: 20%;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    overflow: none;
 }
 .sidebar img{
     width: 150px;
